@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate Verification</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; text-align: center; padding: 20px; }
+        h1 { color: #5c67f2; }
+        form { margin: 20px 0; }
+        input, textarea { width: 80%; padding: 10px; margin: 5px 0; }
+        button { padding: 10px 15px; background-color: #5c67f2; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #4a54c1; }
+    </style>
 </head>
 <body>
     <h1>Certificate Verification</h1>
-    <p id="message">Enter a certificate ID in the URL to view details.</p>
+    <p>Certificate found and valid.</p>
+    <p>Below is part of the certificate number and holder's name. Other parts are blurred and will only be accessible after the administrator's confirmation.</p>
+
+    <form action="https://formspree.io/f/xyzyyrag" method="POST">
+        <label>
+            Your email:
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            Your message:
+            <textarea name="message" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+    </form>
 </body>
 </html>
